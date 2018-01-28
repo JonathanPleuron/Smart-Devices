@@ -1,0 +1,34 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 3V3_to_5V_stepup
+D 3V3 to 5V DC/DC step up
+$ENDCMP
+#
+$CMP 3V6_to_10V_stepup
+D 3V6 to 10V DC/DC step up
+$ENDCMP
+#
+$CMP DHT11
+D Temperature and humidity module
+$ENDCMP
+#
+$CMP LTC1050
+D Precision Zero-Drift Operational Amplifier with Internal Capacitors
+$ENDCMP
+#
+$CMP Li_ion_charger
+D 1A Standalone Linear Li-lon Battery Charger with Thermal
+K TP4056, DW01A, 8205A
+$ENDCMP
+#
+$CMP RN2483_BREAKOUT
+D RN2483/2903 Breakout drazzy.com
+K LoRa, RN2483A
+$ENDCMP
+#
+$CMP gas_sensor
+D Gas_Sensor_T05
+K Gas sensor
+$ENDCMP
+#
+#End Doc Library

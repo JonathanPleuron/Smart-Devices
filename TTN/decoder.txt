@@ -1,0 +1,29 @@
+function Decoder(bytes, port) {
+
+  var decoded = {};
+  var length=bytes.length
+  var gas_sensor={};
+  var temperature={};
+  
+  /**** Frame format (4 Bytes):
+   *         B0      |      B1        |         B2      |        B3
+   *  gas_sensor MSB | gas_sensor LSB | temperature MSB | temperature LSB 
+   */
+  
+  if (port===1){
+    if (length>3){
+      gas_sensor.value=(bytes[0]<<8)+bytes[1];
+      temperature.value=(bytes[2]<<8)+bytes[3];
+    }
+    else{
+      gas_sensor.value=-1;
+      temperature.value=-1;
+    }
+  }
+
+  
+  decoded.gas_sensor=gas_sensor;
+  decoded.temperature=temperature;
+
+  return decoded;
+}

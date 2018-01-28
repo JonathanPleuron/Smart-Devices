@@ -1,0 +1,11 @@
+function Validator(converted, port) {
+  // Return false if the decoded, converted
+  // message is invalid and should be dropped.
+
+  if ((port != 1) || (converted.gas_sensor.value<0)) {
+    return false;
+  }
+  else{
+    return true;
+  }
+}
