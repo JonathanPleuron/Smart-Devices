@@ -14,4 +14,4 @@ See documentation folder for global documentation about the project and useful d
 
 ### PCB
 
-A PCB was designed for the Smart sensor (Uses Kicad free software)
+A PCB was designed for the Smart sensor (Uses [KiCad](http://kicad-pcb.org/) free software)
